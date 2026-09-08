@@ -4,8 +4,8 @@ const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.nav');
 
 menuButton?.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
+  const open = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
 });
 
 document.querySelectorAll('.nav a').forEach(link => {
